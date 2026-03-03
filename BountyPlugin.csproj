@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>DoobzisGrid</AssemblyName>
+    <RootNamespace>BountyPlugin</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+    <FileVersion>2.1.0.0</FileVersion>
+    <Description>Doobzi's Grid - Bounty hunting, economy, shop and auction plugin for Unturned (RocketMod v4)</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- RocketMod v4 + Unturned redistributable references (build-only) -->
+    <PackageReference Include="RestoreMonarchy.RocketRedist" Version="3.26.1.1">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="RestoreMonarchy.UnturnedRedist" Version="3.26.1.1">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <!-- MySQL connector (optional, copied alongside DLL) -->
+    <PackageReference Include="MySql.Data" Version="8.0.33" />
+  </ItemGroup>
+
+</Project>
